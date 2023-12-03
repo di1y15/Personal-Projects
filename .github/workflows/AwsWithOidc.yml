@@ -17,8 +17,9 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::787820432314:role/github-oidc-role
-          role-sessions-name: samplerolesession
-          aws-region: ${{ env.AWS_REGION}}
+          role-session-name: samplerolesession # Corrected key
+          aws-region: ${{ env.AWS_REGION }}
+
       
       - name: Print AWS SSM param
         run: aws ssm get-parameter --name=hello_aws-gh-oidc --query Parameter.Value
