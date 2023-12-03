@@ -3,7 +3,7 @@ on:
   push
 permissions:
   id-token: write # required for requesting jwt
-  content: read # required for actions/checkout
+  # content: read # required for actions/checkout
 env:
   AWS_REGION: "us-east-1"
 jobs:
