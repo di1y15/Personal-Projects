@@ -1,11 +1,11 @@
 name: AWS OIDC Connect
 on:
   push
-permissions:
-  id-token: write # required for requesting jwt
-  # content: read # required for actions/checkout
 env:
   AWS_REGION: "us-east-1"
+permissions:
+      id-token: write # required for requesting jwt
+      content: read # required for actions/checkout
 jobs:
   OIDC:
     runs-on: ubuntu-latest
