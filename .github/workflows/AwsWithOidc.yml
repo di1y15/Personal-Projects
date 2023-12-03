@@ -1,4 +1,4 @@
-name: AWS OIDC Connect
+name: AWS OIDC Connect # comment to trigger the workflow
 on:
   push
 env:
